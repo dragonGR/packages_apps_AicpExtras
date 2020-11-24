@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aicp.extras.utils;
+package com.aicp.extras.fragments;
 
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -38,14 +38,14 @@ public class GamingModeReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-         if (intent.getAction() != null &&
-                 intent.getAction().equals(GamingModeController.GAMING_MODE_TURN_OFF)) {
-             if (DEBUG) Log.d(TAG, "Received " + GamingModeController.GAMING_MODE_TURN_OFF);
-             Settings.System.putInt(context.getContentResolver(), Settings.System.GAMING_MODE_ACTIVE, 0);
-         } else if (intent.getAction() != null &&
-                 intent.getAction().equals(GamingModeController.GAMING_MODE_TURN_ON)) {
-             if (DEBUG) Log.d(TAG, "Received " + GamingModeController.GAMING_MODE_TURN_ON);
-             Settings.System.putInt(context.getContentResolver(), Settings.System.GAMING_MODE_ACTIVE, 1);
-         }
+        if (intent.getAction() != null &&
+                intent.getAction().equals(GamingModeController.GAMING_MODE_TURN_OFF)) {
+            if (DEBUG) Log.d(TAG, "Received " + GamingModeController.GAMING_MODE_TURN_OFF);
+            Settings.System.putInt(context.getContentResolver(), Settings.System.GAMING_MODE_ACTIVE, 0);
+        } else if (intent.getAction() != null &&
+                intent.getAction().equals(GamingModeController.GAMING_MODE_TURN_ON)) {
+            if (DEBUG) Log.d(TAG, "Received " + GamingModeController.GAMING_MODE_TURN_ON);
+            Settings.System.putInt(context.getContentResolver(), Settings.System.GAMING_MODE_ACTIVE, 1);
+        }
     }
 }
