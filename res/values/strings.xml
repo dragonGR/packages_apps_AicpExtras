@@ -1637,5 +1637,14 @@
     <string name="category_lockscreen_gestures_title">Gestures</string>
     <string name="category_lockscreen_gestures_summary">Configure available lockscreen gestures</string>
 
+    <!--FOD -->
+    <string name="fod_icon_picker_category_title">FOD customization</string>
 
+    <!--FOD Color -->
+    <string name="fod_color_title">FOD color</string>
+    <string name="fod_color_summary">Use custom FOD color</string>
+    <string name="fod_color_default">System default</string>
+    <string name="fod_color_1">Green</string>
+    <string name="fod_color_2">Yellow</string>
+    <string name="fod_color_3">White</string>
 </resources>
